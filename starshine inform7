@@ -1,0 +1,37 @@
+starshine inform7
+
+inform7
+The Library is a room. "The small town library is a cozy, quiet place with worn wooden shelves and a faint scent of old books. Dust motes dance in the shafts of sunlight slanting through the windows. A librarian's desk sits near the front door, cluttered with overdue notices and coffee mugs."
+
+The Key is a key. "A tarnished brass key, worn smooth with age."
+
+The Drawer is a container in the Librarian's Desk. "A small, dusty drawer." The Drawer contains The Key.
+
+The Safe is in the Librarian's Desk. "A small, locked safe sits behind the librarian's computer. A faded label reads 'Confidential Files'." The Safe is locked.
+
+The Book is in the Safe. "A large, leather-bound book with ornate gold lettering. The title is barely visible beneath a layer of dust, but appears to be 'The History of Hollow Creek'." The Book is not readable.
+
+The Librarian's Desk is a piece of furniture. "A worn wooden desk cluttered with papers, pens, and various office supplies. A computer monitor is off to one side."
+
+The Librarian is a person. "The librarian is a small, elderly woman with glasses and a neat bun. She wears a cardigan and sensible shoes. She looks perpetually tired but kind."
+
+The Librarian is in the Library.
+
+After getting the key, when played:
+   say "You carefully unlock the safe and open it."
+   say "Inside, you find a large, leather-bound book."
+   say "You take the book from the safe."
+   The Safe is not locked.
+   The Book is readable.
+
+Understand "key" as The Key.
+Understand "safe" as The Safe.
+Understand "book" as The Book.
+Understand "desk" as The Librarian's Desk.
+Understand "drawer" as The Drawer.
+
+Instead of examining the desk, say "The desk is cluttered with papers, pens, and various office supplies."
+
+After getting the key, instead of examining the desk, say "The desk is cluttered with papers, pens, and various office supplies. You notice a small, locked safe sitting behind the computer."
+
+Before getting the key, instead of unlocking the safe, say "The safe is locked. Perhaps there's a key around here somewhere."

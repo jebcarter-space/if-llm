@@ -1,0 +1,20 @@
+get_calculator_tools =>
+add
+subtract
+yada yada
+
+
+
+get_result(value:number) => table look up (js) => response
+
+
+```MarienburgTable
+A total of 6 or less is a Failure; things don’t go well, and the
+GM will describe the consequences.
+A total of 7 - 9 is a Problem; you do it, but there is some
+cost, compromise, retribution, harm, etc.
+A total of 10 - 11 is a Success; you do it without any
+complications.
+A total of 12+ is a Critical; you do it perfectly and receive
+some extra benefit or advantage
+```

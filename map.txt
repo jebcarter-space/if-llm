@@ -1,0 +1,139 @@
+
+[alice:1]
+[john:1]
+
+The following is a Mapview.
+the numbers refference the given characters
+w stands for wall
+" " stands for nothing.
+Can alice see John
+w,w,w,w,w,w
+w, ,1, , ,w
+w, , , , ,w
+w, , , , ,w
+w, , , , ,w
+w,w,w,w,w,w
+w, ,2, , ,w
+w,w,w,w,w,w
+
+-----------------------------------------
+To determine if Alice can see John, we need to check if there is a clear line of sight between their positions on the map. A clear line of sight means that there are no walls (ww) blocking the path between Alice's position (1) and John's position (2).
+
+Let's analyze the map:
+
+w,w,w,w,w,w
+w, ,1, , ,w
+w, , , , ,w
+w, , , , ,w
+w, , , , ,w
+w,w,w,w,w,w
+w, ,2, , ,w
+w,w,w,w,w,w
+
+    Alice is at position (1, 2).
+    John is at position (6, 2).
+
+We need to check if there is a straight line (horizontally, vertically, or diagonally) that connects these two positions without any walls in between.
+
+Let's check the possible lines of sight:
+
+    Vertically: There are walls between rows 2 and 6 in column 2.
+    Horizontally: They are not in the same row.
+    Diagonally: Check if any diagonal path is clear.
+
+Let's verify if there's any clear diagonal path using code.
+
+Alice can see John.
+-----------------------------------------
+
+
+
+Nethack Mid-Game Screenshot Representation
+-----------------------------------------
+
+#### @
+#.........#
+#.@.#.....#
+#.........#
+#.....D...#
+#.........#
+#........h#
+#........h#
+#........h#
+#........$#
+#........$#
+###########
+
+Legend:
+- @: Your character
+- D: Door
+- h: Hobgoblin
+- $: Gold
+- #: Wall
+- .: Floor
+
+
+
+---
+
+
+
+[alice:1]
+[john:1]
+
+Nethack Mid-Game Screenshot Representation
+-----------------------------------------
+
+#### @
+###########
+#1........#
+###########
+#.....D...#
+#.........#
+#........h#
+#........h#
+#........h#
+#........$#
+#........2#
+###########
+
+Legend:
+- @: Your character
+- D: Door
+- h: Hobgoblin
+- $: Gold
+- #: Wall
+- .: Floor
+
+Can alice see John?
+
+
+----
+n the given Nethack screenshot representation, the characters are represented by the symbols @ for the player and 1 and 2 for other characters or monsters.
+
+To determine if Alice (represented by 1) can see John (represented by 2), we need to check if there is a clear line of sight between them. This means there should be no walls (#) blocking the path between their positions.
+
+Let's analyze the map:
+
+#######@########
+#1........#
+###########
+#.....D...#
+#.........#
+#........h#
+#........h#
+#........h#
+#........$#
+#........2#
+###########
+
+    Alice (1) is located at the second row, first column.
+    John (2) is located at the tenth row, ninth column.
+
+To check if Alice can see John, we need to trace a path from Alice's position to John's position. If there are any walls (#) in the direct line of sight, then Alice cannot see John.
+
+Let's check the direct line of sight:
+
+    From Alice's position (second row, first column) to John's position (tenth row, ninth column), there are multiple walls (#) in between.
+
+Since there are walls blocking the direct path, Alice cannot see John.
