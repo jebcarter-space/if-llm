@@ -27,6 +27,6 @@ def clean_text(input_file, output_file):
     print(f"Text cleaned and saved to {output_file}")
 
 # Example usage
-input_file = '/Users/jeb/Documents/writing/if-llm/merrit-moon-pool-source'
-output_file = 'merrit-moon-pool-cleaned.txt'  # Replace with your desired output file name
+input_file = '/Users/jeb/wordpile/03 Workbench/StarCorps/rangen/textdb-master.txt'
+output_file = 'textdb-master-cleaned.txt'  # Replace with your desired output file name
 clean_text(input_file, output_file)
